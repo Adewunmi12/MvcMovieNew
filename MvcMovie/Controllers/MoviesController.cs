@@ -69,8 +69,13 @@ namespace MvcMovie.Controllers
         // GET: Movies/Create
         public IActionResult Create()
         {
-            return View();
+            var model = new Movie();
+            //model.Country = "CA";
+            return View(model);
+            //return View();
         }
+
+
 
         // POST: Movies/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

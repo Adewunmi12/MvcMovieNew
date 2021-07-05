@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,6 +9,11 @@ namespace MvcMovie.Models
 {
     public class Movie
     {
+
+public Movie()
+        {
+            ReleaseDate = new DateTime();
+        }
         public int Id { get; set; }
 
         [StringLength(60, MinimumLength = 3)]
@@ -23,5 +31,15 @@ namespace MvcMovie.Models
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$"), StringLength(5)]
         public string Rating { get; set; }
+
+        [NotMapped]
+        public List<SelectListItem> Ratings { get; } = new List<SelectListItem>
+        {
+            new SelectListItem { Value = "G", Text ="General Audiences" },
+            new SelectListItem { Value = "PG", Text ="Parental Guidance Suggested" },
+            new SelectListItem { Value = "PG-13", Text = "Parents Strongly Cautioned" },
+            new SelectListItem { Value = "R", Text = "Restricted"  },
+            new SelectListItem { Value = "NC-17", Text = "Adults Only"  }
+        };
     }
 }

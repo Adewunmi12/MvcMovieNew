@@ -2,7 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <h1 class="govuk-heading-xl">Welcome</h1>
+                <p class="govuk-body"></p>
+
+            <a asp-area="" asp-controller="Movies" asp-action="Index" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+                Start now
+                <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                </svg>
+            </a>
+
+            <h2 class="govuk-heading-m">Before you start</h2>
+
+            <p class="govuk-body">You can also register by downoading the Movies App.</p>
+
+            <p class="govuk-body">The online service is also available in <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
+
+        </div>
+
+            <div class="govuk-grid-column-one-third">
+                <h2 class="govuk-heading-m">One-third column</h2>
+                <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
+            </div>
+        </div>
+
+    </main>
 </div>

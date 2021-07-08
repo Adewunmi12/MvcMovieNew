@@ -32,6 +32,10 @@ public Movie()
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$"), StringLength(5)]
         public string Rating { get; set; }
 
+        public string Login { get; set; }
+
+        public string Registration { get; set; }
+
         [NotMapped]
         public List<SelectListItem> Ratings { get; } = new List<SelectListItem>
         {

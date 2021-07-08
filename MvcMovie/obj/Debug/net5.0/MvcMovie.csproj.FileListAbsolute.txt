@@ -348,3 +348,5 @@ C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Mvc
 C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\bin\Debug\net5.0\GovUk.Frontend.AspNetCore.dll
 C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\MvcMovie.csprojAssemblyReference.cache
+C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Login.cshtml.g.cs
+C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Registration.cshtml.g.cs

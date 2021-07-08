@@ -177,5 +177,16 @@ namespace MvcMovie.Controllers
         {
             return _context.Movie.Any(e => e.Id == id);
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Registration()
+        {
+            return View();
+        }
+
     }
 }

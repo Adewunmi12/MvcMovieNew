@@ -4,6 +4,49 @@
     ViewData["Title"] = "Login";
 }
 
-<h2>Login</h2>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
 
-<p>Hello from our View Template!</p>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <h1 class="govuk-heading-xl">Sign in</h1>
+                <p class="govuk-body"></p>
+
+                @*<h2>Sign in</h2>*@
+
+                @*<p>Hello from our View Template!</p>*@
+                @*<h4>Sign In</h4>*@
+                <hr />
+            </div>
+        </div>
+    </main>
+
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="Username">
+            Username or email address
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="Username" name="Username" type="text">
+    </div>
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="Password">
+            Password
+            <a class="label-link" asp-controller="" asp-action="">
+                Forgot your password?
+            </a>
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="Password" name="Password" type="text">
+    </div>
+    <div>
+        <button type="submit" class="govuk-button" tabindex="4">
+            Sign in
+        </button>
+    </div>
+    
+    <div class="govuk-body">
+        <a asp-controller="Movies" asp-action="Registration">
+            Reegister as a new user
+        </a>
+    </div>
+
+</div>

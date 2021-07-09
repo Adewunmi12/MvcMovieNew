@@ -4,6 +4,54 @@
     ViewData["Title"] = "Registration";
 }
 
-<h2>Registration</h2>
 
-<p>Hello from our View Template!</p>from our View Template!</p>
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <h1 class="govuk-heading-xl">Registration</h1>
+                <p class="govuk-body"></p>
+
+                @*<h2>Registration</h2>*@
+
+                @*<p>Hello from our View Template!</p>*@
+                <h4>Create a new account</h4>
+                <hr />
+            </div>
+        </div>
+    </main>
+
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="Username">
+            Username
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="Username" name="Username" type="text">
+    </div>
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="Email">
+            Email
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="Email" name="Email" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="Password">
+            Password
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="Password" name="Password" type="text">
+    </div>
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="Password">
+            Confirm Password
+        </label>
+        <input class="govuk-input govuk-!-width-one-half" id="Password" name="Password" type="text">
+    </div>
+
+    <div>
+        <button type="submit" class="govuk-button" tabindex="4">
+            Register
+        </button>
+    </div>
+</div>

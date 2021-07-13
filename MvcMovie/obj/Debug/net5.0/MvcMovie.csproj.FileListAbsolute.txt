@@ -350,3 +350,4 @@ C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Mvc
 C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\MvcMovie.csprojAssemblyReference.cache
 C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Login.cshtml.g.cs
 C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Registration.cshtml.g.cs
+C:\Users\Adewunmi.Awolesi\source\repos\MvcMovieNew\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\ForgotPassword.cshtml.g.cs

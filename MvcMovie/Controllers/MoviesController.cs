@@ -82,15 +82,24 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating,Day,Month,Year")] Movie movie)
         {
+
             if (ModelState.IsValid)
             {
+                DateTime Releasedate = converttodatetime(movie.Day, movie.Month, movie.Year);
+                movie.ReleaseDate = Releasedate;
                 _context.Add(movie);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(movie);
+        }
+
+        public DateTime converttodatetime(int day, int month, int year)
+        {
+            var newdate = new DateTime(year, month, day);
+            return newdate;
         }
 
         // GET: Movies/Edit/5

@@ -22,6 +22,12 @@ public Movie()
         [Display(Name = "Release Date"), DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
+        public int Day { get; set; }
+
+        public int Month { get; set; }
+
+        public int Year { get; set; }
+
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$"), Required, StringLength(30)]
         public string Genre { get; set; }
 

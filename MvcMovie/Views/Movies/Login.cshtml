@@ -19,34 +19,37 @@
                 @*<h4>Sign In</h4>*@
                 <hr />
             </div>
-        </div>
-    </main>
+            </div>
+            </main>
 
-    <div class="govuk-form-group">
-        <label class="govuk-label" for="Username">
-            Username or email address
-        </label>
-        <input class="govuk-input govuk-!-width-one-half" id="Username" name="Username" type="text">
-    </div>
-    <div class="govuk-form-group">
-        <label class="govuk-label" for="Password">
-            Password
-            <a class="label-link" asp-controller="Movies" asp-action="ForgotPassword">
-                Forgot your password?
-            </a>
-        </label>
-        <input class="govuk-input govuk-!-width-one-half" id="Password" name="Password" type="text">
-    </div>
-    <div>
-        <a asp-area="" asp-controller="Movies" asp-action="Index" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
-            Sign in
-        </a>
-    </div>
-    
-    <div class="govuk-body">
-        <a asp-controller="Movies" asp-action="Registration">
-            Reegister as a new user
-        </a>
-    </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="Username">
+                    Username or email address
+                </label>
+                <input class="govuk-input govuk-!-width-one-half" id="Username" name="Username" type="text">
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="Password">
+                    Password
+                    <a class="label-link" asp-controller="Movies" asp-action="ForgotPassword">
+                        Forgot your password?
+                    </a>
+                </label>
+                <input class="govuk-input govuk-!-width-one-half" id="Password" name="Password" type="text">
+            </div>
+            <div>
+                <a asp-area="" asp-controller="Movies" asp-action="Index" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+                    Sign in
+                </a>
+            </div>
 
+            <div class="govuk-body">
+                <a asp-controller="Movies" asp-action="Registration">
+                    Reegister as a new user
+                </a>
+            </div>
+
+        @*</div>*@
+    @*</main>*@
 </div>
+

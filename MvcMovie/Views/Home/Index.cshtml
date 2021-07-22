@@ -11,20 +11,31 @@
                 <h1 class="govuk-heading-xl">Welcome</h1>
                 <p class="govuk-body"></p>
 
-            <a asp-area="" asp-controller="Movies" asp-action="Index" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+                @*<a asp-area="" asp-controller="Movies" asp-action="Index" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
                 Start now
                 <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
                     <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
                 </svg>
-            </a>
+            </a>*@
 
-            <h2 class="govuk-heading-m">Before you start</h2>
+                <h2 class="govuk-heading-m">Before you start</h2>
 
-            <p class="govuk-body">You can also register by downoading the Movies App.</p>
+                <p class="govuk-body">You can also register by downoading the Movies App.</p>
 
-            <p class="govuk-body">The online service is also available in <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
+                <p class="govuk-body">The online service is also available in <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
 
-        </div>
+
+                <a asp-area="" asp-controller="Movies" asp-action="Login" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+                    Start now
+                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                    </svg>
+                </a>
+
+                @*<a asp-controller="Movies" asp-action="Registration" class="govuk-link">Create an account</a>*@
+
+            </div>
+
 
             <div class="govuk-grid-column-one-third">
                 <h2 class="govuk-heading-m">One-third column</h2>
